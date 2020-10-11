@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ALEXANDER CHERKAS | FOLICK</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#192a56">
+  <meta name="msapplication-TileColor" content="#192a56">
+  <meta name="theme-color" content="#ffffff">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner" id="header__nav">
+        <!-- контент для меню добавлять не буду = смысла делать ограничения для логотипа нет ( закинул на абсолют ) -->
+        <div data-menuanchor="intro" class="header__logo">
+          <a class="logo__link" href="#intro"></a>
+        </div>
+        <nav class="header__nav menu">
+          <ul class="menu__list">
+            <li data-menuanchor="about" class="menu__item">
+              <a class="menu__link" href="#about">About</a>
+            </li>
+            <li data-menuanchor="skill" class="menu__item">
+              <a class="menu__link" href="#skill">Skill</a>
+            </li>
+            <li data-menuanchor="contact" class="menu__item">
+              <a class="menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="fullpage">
+    <!-- intro -->
+    <section data-anchor="intro" class="intro page-section">
+      <div class="container">
+        <div class="intro__inner">
+          <!-- div for script TypeD -->
+          <div class="intro__title">
+            <h1></h1>
+          </div>
+          <p class="intro__text">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+          </p>
+        </div>
+      </div>
+      <a class="mouse" href="#about"></a>
+    </section>
+    <!-- about -->
+    <section data-anchor="about" class="about page-section">
+      <div class="container">
+
+      </div>
+      <a class="mouse" href="#skill"></a>
+    </section>
+    <!-- skill -->
+    <section data-anchor="skill" class="skill page-section">
+      <div class="container">
+
+      </div>
+      <a class="mouse" href="#contact"></a>
+    </section>
+    <!-- contact -->
+    <section data-anchor="contact" class="contact page-section">
+      <div class="container">
+
+      </div>
+    </section>
+  </main>
+
+  <!-- <section class="about">
+    <div class="container">
+      <h1 class="about__title title">
+        About me
+      </h1>
+      <div class="about__inner ">
+        <div class="about__photo">
+          <img src="images/photo.jpg" alt="photo">
+        </div>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore, commodi voluptate et quibusdam tenetur
+          pariatur sapiente, quod fuga delectus, similique aliquid aut eius modi!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore, commodi voluptate et quibusdam tenetur
+          pariatur sapiente, quod fuga delectus, similique aliquid aut eius modi!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore, commodi voluptate et quibusdam tenetur
+          pariatur sapiente, quod fuga delectus, similique aliquid aut eius modi!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skill">
+    <div class="container ">
+      <div class="skill__inner">
+        <h2 class="skill__title title">
+          Skill
+        </h2>
+        <div class="skill__wrap">
+          <ul class="skill__list">
+            <li class="skill__item">
+              <div class="skill__box box">
+                <div class="box__name">HTML</div>
+                <div class="box__bar">
+                  <div class="box__per" per="90"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill__item">
+              <div class="skill__box box">
+                <div class="box__name">CSS / SCSS</div>
+                <div class="box__bar">
+                  <div class="box__per" per="89"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill__item">
+              <div class="skill__box box">
+                <div class="box__name">JS / jQuery</div>
+                <div class="box__bar">
+                  <div class="box__per" per="80"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="skill__list">
+            <li class="skill__item">
+              <div class="skill__box box">
+                <div class="box__name">GIT / GitHub</div>
+                <div class="box__bar">
+                  <div class="box__per" per="79"></div>
+                </div>
+              </div>
+            </li>
+            <li class="skill__item">
+              <div class="skill__box box">
+                <div class="box__name">BEM</div>
+                <div class="box__bar">
+                  <div class="box__per" per="80"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="social">
+    <div class="container">
+      <div class="social__inner">
+        <h2 class="social__title title">
+          Social / Contact
+        </h2>
+        <div class="social__wrap contact">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link teleg" href="#" title="Telegram" target="blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link inst" href="#" title="Instagram" target="blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link vk" href="#" title="VK" target="blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link linkedin" href="#" title="Linkedin" target="blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link git" href="#" title="GitHub" target="blank"></a>
+            </li>
+          </ul>
+          <ul class="contact__list">
+            <li class="contact__item phone"><a class="contact__link" href="tel:+380687110610">Phone:
+                +38(068-711-06-10)</a>
+            </li>
+            <li class="contact__item email"><a class="contact__link" href="mailto:alexandercherkas29@gmail.com">E-mail:
+                alexandercherkas29@gmail.com</a>
+            </li>
+            <li class="contact__item teleg"><a class="contact__link" target="blank"
+                href="https://t.me/folickkk">Telegram:
+                @folickkk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <div class="portfolio">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <a href="#" target="blank" class="swiper-slide company">
+          <img src="images/company.svg" alt="Company">
+        </a>
+        <a href="#" target="blank" class="swiper-slide healthy">
+          <img src="images/healthy.svg" alt="Healthy">
+        </a>
+        <a href="#" target="blank" class="swiper-slide porten">
+          <img src="images/porten.svg" alt="Porten">
+        </a>
+        <a href="#" target="blank" class="swiper-slide trafico">
+          <img src="images/trafico.svg" alt="Trafico">
+        </a>
+        <a href="#" target="blank" class="swiper-slide trafalgar">
+          <img src="images/trafalgar.svg" alt="Trafalgar">
+        </a>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div> -->
+  <!-- scripts -->
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 2000);
+    }
+  </script>
+  <script defer src="js/libs.min.js"></script>
+  <script defer src="js/script.js"></script>
+</body>
+
+</html>
