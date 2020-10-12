@@ -7,53 +7,52 @@ $(function () {
   $("img, a").on("dragstart", function (event) {
     event.preventDefault();
   });
-  $('.box__per').each(function () {
-    let $this = $(this);
-    let per = $this.attr('per');
-    $this.css("width", per + '%');
-    $({
-      animatedValue: 0
-    }).animate({
-      animatedValue: per
-    }, {
-      duration: 1000,
-      step: function () {
-        $this.attr('per', Math.floor(this.animatedValue) + '%');
-      },
-      complete: function () {
-        $this.attr('per', Math.floor(this.animatedValue) + '%');
-      }
-    });
-  });
-  $('#fullpage').fullpage({
-    anchors: ['intro', 'about', 'skill', 'contact'],
-    menu: '#header__nav',
-    lazyLoading: true,
-    verticalCentered: true,
-    autoScrolling: true,
-    scrollHorizontally: true,
-    scrollingSpeed: 1111,
-    scrollOverflow: true,
-    sectionSelector: '.page-section',
-  });
 });
-let typedLogo = new Typed('.logo__link', {
-  strings: ["Hello", "Privet", "Alexander Cherkas", "FOLICK"],
-  typeSpeed: 200,
-});
-let typedTitle = new Typed('.intro__title h1', {
-  strings: ["1 0 1", "{hello?}", "This site portfolio", "{introTitle<?>}", "Это сайт портфолио Александра"],
-  typeSpeed: 90,
-});
-// let mySwiper = new Swiper('.swiper-container', {
-//   direction: 'horizontal',
-//   loop: true,
-//   autoplay: {
-//     delay: 2000,
-//   },
-//   slidesPerView: 3,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
+// var textWrapper = document.querySelector(".intro-title");
+// textWrapper.innerHTML = textWrapper.textContent.replace(
+//   /([^\x00-\x80]|\w)/g,
+//   "<span class='letter'>$&</span>"
+// );
+// anime
+//   .timeline({
+//     loop: false
+//   })
+//   .add({
+//     targets: ".intro-title .letter",
+//     translateX: [140, 0],
+//     translateZ: 0,
+//     opacity: [0, 1],
+//     easing: "easeOutExpo",
+//     duration: 1400,
+//     delay: function (el, i) {
+//       return 500 + 50 * i;
+//     }
+//   })
+//   .add({
+//     targets: ".intro-title .letter",
+//     translateX: [0, -140],
+//     opacity: [1, 0],
+//     easing: "easeInExpo",
+//     duration: 1200,
+//     delay: function (el, i) {
+//       return 700 + 50 * i;
+//     }
+//   });
+// gsap.to(".loader", {
+//   duration: 2.,
+//   delay: 5,
+//   top: "-100%",
+//   ease: "expo.inOut"
 // });
+let mySwiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  speed: 1000,
+  mousewheel: {
+
+  }
+})
+mySwiper.on('slideChangeTransitionStart', function () {
+  $('.swiper-slide').css('transform', "scale(.8)");
+}).on("slideChangeTransitionEnd", function () {
+  $('.swiper-slide').css('transform', "scale(1)");
+});
