@@ -7,89 +7,80 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ALEXANDER CHERKAS | FOLICK</title>
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="manifest" href="images/favicon/site.webmanifest">
   <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#192a56">
   <meta name="msapplication-TileColor" content="#192a56">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff"> -->
   <!-- style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <!-- <div class="loader">
-    <marquee direction="right" scrollamount="35">Privet! Hello! </marquee>
-    <marquee direction="left" scrollamount="30">Kak dela? How are you?</marquee>
-    <marquee direction="right" scrollamount="35">Eto site portfolio Alexandra :| This is the site portfolio of Alexander
-    </marquee>
-    <marquee direction="" scrollamount="15"> ? h e l l o ? </marquee>
-    <div class="intro">
-      <h1 class="intro-title">FOLICK</h1>
-    </div>
-  </div> -->
-
-  <div class="wrapper">
+  <div class="wrapper" data-scroll-container>
+    <!-- header -->
     <header class="header">
-      <div class="container">
-        <a href="#" class="logo">FOLICK</a>
-
-        <nav class="menu">
+      <div class="header__container">
+        <a href="#" class="logo" data-scroll>.FOLICK</a>
+        <nav class="menu" data-scroll>
           <div class="menu__btn">
             <div class="menu__btn-box">
               <div class="menu__btn-inner"></div>
             </div>
           </div>
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">.Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">.About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">.Portfolio</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide intro">
-          <div class="container">
-            <h1 class="intro__title title">Portfolio</h1>
-
+    <!-- home -->
+    <section class="page__section home" id="home" data-scroll-section>
+      <div class="container">
+        <h1 class="home__title title" data-scroll data-scroll-speed="2">
+          ?{HELLO} > {NAME?}
+        </h1>
+        <p class="home__text" data-scroll data-scroll-speed="1">
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Буквоград его
+          безорфографичный имени выйти раз, рукописи назад одна ручеек, единственное толку то. Коварных то выйти
+          рекламных великий на берегу сбить языком предупредила. Решила над предупредила вопроса от всех коварный раз
+          курсивных переписывается рекламных дороге, ведущими щеке рукопись бросил возвращайся рыбного алфавит.
+        </p>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="page__section about" data-scroll-section>
+      <div class="container">
+        <h2 class="about__title title" data-scroll data-scroll-speed="1">
+          .About
+        </h2>
+        <div class="about__inner">
+          <div class="about__photo" data-scroll data-scroll-speed="2">
+            <img src="images/photo.jpg" alt="">
+          </div>
+          <div class="about__box" data-scroll data-scroll-speed="2">
+            <p class="about__text">
+              Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+            </p>
+            <ul class="about__skill skill">
+              <li class="skill__item"><a href="#" class="skill__link">HTML/CSS</a></li>
+              <li class="skill__item"><a href="#" class="skill__link">JS/jQuery</a></li>
+              <li class="skill__item"><a href="#" class="skill__link">Git/GitHub</a></li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a class="logo__link" href="#"></a>
-        </div>
-        <nav class="header__nav menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Skill</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-          </ul>
-
-        </nav>
-      </div>
-    </div>
-  </header> -->
-
   <!-- script -->
-  <script defer src="js/libs.min.js"></script>
-  <script defer src="js/script.js"></script>
+  <script defer src=" js/libs.min.js"> </script>
+  <script defer src="js/script.js">
+  </script>
 </body>
 
 </html>
