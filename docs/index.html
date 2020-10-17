@@ -7,75 +7,131 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ALEXANDER CHERKAS | FOLICK</title>
   <!-- favicon -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#192a56">
-  <meta name="msapplication-TileColor" content="#192a56">
-  <meta name="theme-color" content="#ffffff"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#725ac1">
+  <meta name="theme-color" content="#ffffff">
   <!-- style -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <div class="wrapper" data-scroll-container>
-    <!-- header -->
-    <header class="header">
-      <div class="header__container">
-        <a href="#" class="logo" data-scroll>.FOLICK</a>
-        <nav class="menu" data-scroll>
-          <div class="menu__btn">
-            <div class="menu__btn-box">
-              <div class="menu__btn-inner"></div>
-            </div>
-          </div>
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">.Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">.About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">.Portfolio</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- home -->
-    <section class="page__section home" id="home" data-scroll-section>
-      <div class="container">
-        <h1 class="home__title title" data-scroll data-scroll-speed="2">
-          ?{HELLO} > {NAME?}
-        </h1>
-        <p class="home__text" data-scroll data-scroll-speed="1">
-          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Буквоград его
-          безорфографичный имени выйти раз, рукописи назад одна ручеек, единственное толку то. Коварных то выйти
-          рекламных великий на берегу сбить языком предупредила. Решила над предупредила вопроса от всех коварный раз
-          курсивных переписывается рекламных дороге, ведущими щеке рукопись бросил возвращайся рыбного алфавит.
-        </p>
-      </div>
-    </section>
-    <!-- about -->
-    <section class="page__section about" data-scroll-section>
-      <div class="container">
-        <h2 class="about__title title" data-scroll data-scroll-speed="1">
-          .About
-        </h2>
-        <div class="about__inner">
-          <div class="about__photo" data-scroll data-scroll-speed="2">
-            <img src="images/photo.jpg" alt="">
-          </div>
-          <div class="about__box" data-scroll data-scroll-speed="2">
-            <p class="about__text">
-              Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
-            </p>
-            <ul class="about__skill skill">
-              <li class="skill__item"><a href="#" class="skill__link">HTML/CSS</a></li>
-              <li class="skill__item"><a href="#" class="skill__link">JS/jQuery</a></li>
-              <li class="skill__item"><a href="#" class="skill__link">Git/GitHub</a></li>
-            </ul>
+  <!-- header -->
+  <header class="header ">
+    <div class="header__container">
+      <a href="#" class="logo">.FOLICK</a>
+      <nav class="menu">
+        <div class="menu__btn">
+          <div class="menu__btn-box">
+            <div class="menu__btn-inner"></div>
           </div>
         </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#home" class="menu__link">.Home</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">.About</a></li>
+          <li class="menu__item"><a href="#skill" class="menu__link">.skill</a></li>
+          <li class="menu__item"><a href="#portfolio" class="menu__link">.Portfolio</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link">.contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- home -->
+  <section class="page__section home" id="home">
+    <div class="container">
+      <h1 class="home__title title anim">
+        {HELLO!} + {NAME?}
+      </h1>
+      <p class="home__text anim">
+        .My name is Alexander and this is my portfolio site.
+      </p>
+      <p class="home__text anim">
+        .Меня зовут Александр и это мой сайт портфолио.
+      </p>
+    </div>
+  </section>
+  <!-- about -->
+  <section class="page__section about" id="about">
+    <div class="container">
+      <h2 class="about__title title anim">
+        .About
+      </h2>
+      <div class="about__inner">
+        <div class="about__photo anim left">
+          <img src="images/photo.jpg" alt="">
+        </div>
+        <div class="about__box anim ">
+          <p class="about__text anim">
+            At the beginning of the 11th grade I started to get interested in Web development.
+            After graduating from school, I decided to go to courses, I improved my knowledge in the courses.
+            At the moment I am working on freelance and in parallel looking for a job.
+          </p>
+          <p class="about__text anim">
+            В начале 11-го класса начал интересоваться Веб-разработкой.
+            После окончания школы решил пойти на курсы, на курсах подтянул знания.
+            На данный момент работаю на freelance и параллельно ищу работу.
+          </p>
+        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  <!-- skill -->
+  <section class="page__section skill" id="skill">
+    <div class="container">
+      <h2 class="skill__title title anim">
+        .skill
+      </h2>
+      <ul class="skill__list">
+        <li class="skill__item anim html">
+          HTML5
+          <div class="skill__image">
+            <img src="images/html5.png" alt="html">
+          </div>
+        </li>
+        <li class="skill__item anim css">
+          CSS
+          <div class="skill__image">
+            <img src="images/css.png" alt="html">
+          </div>
+        </li>
+        <li class="skill__item anim js">
+          JS
+          <div class="skill__image">
+            <img src="images/js.png" alt="html">
+          </div>
+        </li>
+        <li class="skill__item anim bs">
+          Bootstrap
+          <div class="skill__image">
+            <img src="images/bs.png" alt="html">
+          </div>
+        </li>
+        <li class="skill__item anim git">
+          Git/GitHub
+          <div class="skill__image">
+            <img src="images/github.svg" alt="html">
+          </div>
+        </li>
+        <li class="skill__item anim ">
+          other.
+          <div class="skill__image">
+            <!-- <img src=" " alt=" "> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="page__section portfolio" id="portfolio">
+    <div class="container">
+      Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Эта предупреждал
+      повстречался составитель рекламных несколько скатился образ обеспечивает единственное дороге встретил рот деревни
+      наш не строчка реторический это маленькая языкового, океана его ручеек ведущими? Последний безорфографичный даже
+      свою, своего власти снова океана ее приставка она рыбными одна букв правилами?
+    </div>
+  </section>
 
   <!-- script -->
   <script defer src=" js/libs.min.js"> </script>
