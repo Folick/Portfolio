@@ -7,19 +7,18 @@ $(function () {
   $("img, a").on("dragstart", function (event) {
     event.preventDefault();
   });
-
 });
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-// gsap.utils.toArray(".menu__list .menu__item .menu__link").forEach(function (a) {
-//   a.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     gsap.to(window, {
-//       duration: 1.5,
-//       scrollTo: e.target.getAttribute("href")
-//     });
-//   });
-// });
+gsap.utils.toArray(".menu__list .menu__item .menu__link").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: e.target.getAttribute("href")
+    });
+  });
+});
 
 // function animateFrom(elem, direction) {
 //   direction = direction | 1;
@@ -38,7 +37,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 //     y: y,
 //     autoAlpha: 0,
 //   }, {
-//     duration: 1.25,
+//     duration: 1.5,
 //     x: 0,
 //     y: 0,
 //     autoAlpha: 1,
@@ -49,7 +48,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 // function hide(elem) {
 //   gsap.set(elem, {
-//     autoAlpha: 0
+//     autoAlpha: 0,
 //   });
 // }
 
@@ -59,22 +58,29 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 //   gsap.utils.toArray(".anim").forEach(function (elem) {
 //     hide(elem);
 //     ScrollTrigger.create({
-//       start: '-50px bottom',
+//       start: 'top 99%',
 //       trigger: elem,
+//       markers: true,
 //       onEnter: function () {
 //         animateFrom(elem)
 //       },
 //       onEnterBack: function () {
-//         animateFrom(elem, -1)
+//         animateFrom(elem, 1)
 //       },
-//       onLeave: function () {
-//         hide(elem)
-//       }
+//       onLeave: function () {}
 //     });
 //   });
 // });
- 
 // gsap.from('.menu__btn, .logo', {
 //   y: -100,
 //   duration: 1.25,
-// }) 
+// });
+
+let wow = new WOW({
+  boxClass: 'anim',
+  animateClass: 'anim',
+  offset: 0,
+  mobile: true,
+  live: true,
+});
+wow.init();
