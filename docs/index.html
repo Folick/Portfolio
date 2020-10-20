@@ -41,35 +41,35 @@
   </header>
   <!-- home -->
   <section class="page__section home" id="home">
-    <div class="container">
-      <h1 class="home__title title anim">
+    <div class="container anim fade-up">
+      <h1 class="home__title title">
         {HELLO!} + {NAME?}
       </h1>
-      <p class="home__text anim">
+      <p class="home__text">
         .My name is Alexander and this is my portfolio site.
       </p>
-      <p class="home__text anim">
+      <p class="home__text">
         .Меня зовут Александр и это мой сайт портфолио.
       </p>
     </div>
   </section>
   <!-- about -->
-  <section class="page__section about" id="about">
+  <section class="page__section about " id="about">
     <div class="container">
-      <h2 class="about__title title anim">
+      <h2 class="about__title title anim anim-top">
         .About
       </h2>
       <div class="about__inner">
-        <div class="about__photo anim left">
+        <div class="about__photo anim anim-left" data-wow-duration="1.5s">
           <img src="images/photo.jpg" alt="">
         </div>
-        <div class="about__box anim ">
-          <p class="about__text anim">
+        <div class="about__box">
+          <p class="about__text anim anim-right" data-wow-duration="1.5s">
             At the beginning of the 11th grade I started to get interested in Web development.
             After graduating from school, I decided to go to courses, I improved my knowledge in the courses.
             At the moment I am working on freelance and in parallel looking for a job.
           </p>
-          <p class="about__text anim">
+          <p class="about__text anim anim-right" data-wow-duration="1.8s">
             В начале 11-го класса начал интересоваться Веб-разработкой.
             После окончания школы решил пойти на курсы, на курсах подтянул знания.
             На данный момент работаю на freelance и параллельно ищу работу.
@@ -79,46 +79,67 @@
     </div>
   </section>
   <!-- skill -->
-  <section class="page__section skill" id="skill">
+  <section class="page__section skill " id="skill">
     <div class="container">
-      <h2 class="skill__title title anim">
+      <h2 class="skill__title title anim anim-left" data-wow-duration="1s">
         .skill
       </h2>
-      <ul class="skill__list">
-        <li class="skill__item anim html">
+      <ul class="skill__list anim anim-right" data-wow-duration="2s">
+        <li class="skill__item  html">
           HTML5
           <div class="skill__image">
-            <img src="images/html5.png" alt="html">
+            <img src="images/html5.svg" alt="html">
           </div>
         </li>
-        <li class="skill__item anim css">
-          CSS
+        <li class="skill__item  css">
+          CSS/<span>SCSS</span>
           <div class="skill__image">
-            <img src="images/css.png" alt="html">
+            <img src="images/sass-css.png" alt="css sass">
           </div>
         </li>
-        <li class="skill__item anim js">
-          JS
+        <li class="skill__item  js">
+          JavaScript/
+          <span>jQuery</span>
           <div class="skill__image">
             <img src="images/js.png" alt="html">
           </div>
         </li>
-        <li class="skill__item anim bs">
+      </ul>
+      <ul class="skill__list anim anim-left" data-wow-duration="2s">
+        <li class="skill__item  bs">
           Bootstrap
           <div class="skill__image">
-            <img src="images/bs.png" alt="html">
+            <img src="images/bs.svg" alt="html">
           </div>
         </li>
-        <li class="skill__item anim git">
+        <li class="skill__item  git">
           Git/GitHub
           <div class="skill__image">
             <img src="images/github.svg" alt="html">
           </div>
         </li>
-        <li class="skill__item anim ">
-          other.
+        <li class="skill__item gulp">
+          gulp
           <div class="skill__image">
-            <!-- <img src=" " alt=" "> -->
+            <img src="images/gulp.svg" alt="gulp">
+          </div>
+        </li>
+      </ul>
+      <ul class="skill__list anim anim-right" data-wow-duration="2s">
+        <li class="skill__item  html">
+          BEM
+          <div class="skill__image">
+            <img src="images/bem.svg" alt="html">
+          </div>
+        </li>
+        <li class="skill__item  tools">
+          <ul class="tools__list">
+            <li class="tools__item trello">Trello</li>
+            <li class="tools__item jira">Jira</li>
+            <li class="tools__item slack">Slack</li>
+          </ul>
+          <div class="skill__image">
+            <img src="images/tools.png" alt="Trello Jira Slack">
           </div>
         </li>
       </ul>
@@ -126,10 +147,7 @@
   </section>
   <section class="page__section portfolio" id="portfolio">
     <div class="container">
-      Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Эта предупреждал
-      повстречался составитель рекламных несколько скатился образ обеспечивает единственное дороге встретил рот деревни
-      наш не строчка реторический это маленькая языкового, океана его ручеек ведущими? Последний безорфографичный даже
-      свою, своего власти снова океана ее приставка она рыбными одна букв правилами?
+
     </div>
   </section>
 
