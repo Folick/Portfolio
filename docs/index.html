@@ -40,8 +40,8 @@
     </div>
   </header>
   <!-- home -->
-  <section class="page__section home" id="home">
-    <div class="container anim fade-up">
+  <section class=" home" id="home">
+    <div class="container anim fade-in">
       <h1 class="home__title title">
         {HELLO!} + {NAME?}
       </h1>
@@ -54,22 +54,22 @@
     </div>
   </section>
   <!-- about -->
-  <section class="page__section about " id="about">
+  <section class=" about " id="about">
     <div class="container">
-      <h2 class="about__title title anim anim-top">
+      <h2 class="about__title title anim fade-in">
         .About
       </h2>
       <div class="about__inner">
-        <div class="about__photo anim anim-left" data-wow-duration="1.5s">
+        <div class="about__photo anim fade-in" data-wow-duration="1.5s">
           <img src="images/photo.jpg" alt="">
         </div>
-        <div class="about__box">
-          <p class="about__text anim anim-right" data-wow-duration="1.5s">
+        <div class="about__box anim fade-in" data-wow-duration="1.5s">
+          <p class="about__text ">
             At the beginning of the 11th grade I started to get interested in Web development.
             After graduating from school, I decided to go to courses, I improved my knowledge in the courses.
             At the moment I am working on freelance and in parallel looking for a job.
           </p>
-          <p class="about__text anim anim-right" data-wow-duration="1.8s">
+          <p class="about__text ">
             В начале 11-го класса начал интересоваться Веб-разработкой.
             После окончания школы решил пойти на курсы, на курсах подтянул знания.
             На данный момент работаю на freelance и параллельно ищу работу.
@@ -79,80 +79,154 @@
     </div>
   </section>
   <!-- skill -->
-  <section class="page__section skill " id="skill">
+  <section class=" skill " id="skill">
     <div class="container">
-      <h2 class="skill__title title anim anim-left" data-wow-duration="1s">
+      <h2 class="skill__title title anim fade-in" data-wow-duration="1s">
         .skill
       </h2>
-      <ul class="skill__list anim anim-right" data-wow-duration="2s">
-        <li class="skill__item  html">
-          HTML5
-          <div class="skill__image">
-            <img src="images/html5.svg" alt="html">
-          </div>
+      <div class="skill__inner">
+        <ul class="skill__list anim fade-in" data-wow-duration="2s">
+          <li class="skill__item html">
+            HTML5
+          </li>
+          <li class="skill__item css">
+            CSS/<span>SCSS</span>
+          </li>
+          <li class="skill__item js">
+            JavaScript
+          </li>
+          <li class="skill__item jq">
+            jQuery
+          </li>
+        </ul>
+        <ul class="skill__list anim fade-in" data-wow-duration="2s">
+          <li class="skill__item bs">
+            Bootstrap
+          </li>
+          <li class="skill__item git">
+            Git/GitHub
+          </li>
+          <li class="skill__item gulp">
+            gulp
+          </li>
+        </ul>
+        <ul class="skill__list anim fade-in" data-wow-duration="2s">
+          <li class="skill__item bem">
+            BEM
+          </li>
+          <li class="skill__item trello">
+            Trello
+          </li>
+          <li class="skill__item jira">
+            Jira
+          </li>
+          <li class="skill__item slack">
+            Slack
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio -->
+  <section class=" portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="portfolio__title title anim fade-in" data-wow-duration="1s">
+        .portfolio
+      </h2>
+      <ul class="portfolio__list list">
+        <li class="list__item">
+          <a href="#" class="list__link" target="blank">
+            <span class="list__text">
+              Trafico
+            </span>
+            <img class="list__image" src="images/01.png" alt="">
+          </a>
         </li>
-        <li class="skill__item  css">
-          CSS/<span>SCSS</span>
-          <div class="skill__image">
-            <img src="images/sass-css.png" alt="css sass">
-          </div>
+        <li class="list__item">
+          <a href="#" class="list__link" target="blank">
+            <span class="list__text">
+              Company
+            </span>
+            <img class="list__image" src="images/02.png" alt="">
+          </a>
         </li>
-        <li class="skill__item  js">
-          JavaScript/
-          <span>jQuery</span>
-          <div class="skill__image">
-            <img src="images/js.png" alt="html">
-          </div>
+        <li class="list__item">
+          <a href="#" class="list__link" target="blank">
+            <span class="list__text">
+              Healthy
+            </span>
+            <img class="list__image" src="images/03.png" alt="">
+          </a>
         </li>
-      </ul>
-      <ul class="skill__list anim anim-left" data-wow-duration="2s">
-        <li class="skill__item  bs">
-          Bootstrap
-          <div class="skill__image">
-            <img src="images/bs.svg" alt="html">
-          </div>
+        <li class="list__item">
+          <a href="#" class="list__link" target="blank">
+            <span class="list__text">
+              Oxygen
+            </span>
+            <img class="list__image" src="images/04.png" alt="">
+          </a>
         </li>
-        <li class="skill__item  git">
-          Git/GitHub
-          <div class="skill__image">
-            <img src="images/github.svg" alt="html">
-          </div>
-        </li>
-        <li class="skill__item gulp">
-          gulp
-          <div class="skill__image">
-            <img src="images/gulp.svg" alt="gulp">
-          </div>
-        </li>
-      </ul>
-      <ul class="skill__list anim anim-right" data-wow-duration="2s">
-        <li class="skill__item  html">
-          BEM
-          <div class="skill__image">
-            <img src="images/bem.svg" alt="html">
-          </div>
-        </li>
-        <li class="skill__item  tools">
-          <ul class="tools__list">
-            <li class="tools__item trello">Trello</li>
-            <li class="tools__item jira">Jira</li>
-            <li class="tools__item slack">Slack</li>
-          </ul>
-          <div class="skill__image">
-            <img src="images/tools.png" alt="Trello Jira Slack">
-          </div>
+        <li class="list__item">
+          <a href="#" class="list__link" target="blank">
+            <span class="list__text">
+              porten
+            </span>
+            <img class="list__image" src="images/05.png" alt="">
+          </a>
         </li>
       </ul>
     </div>
   </section>
-  <section class="page__section portfolio" id="portfolio">
+  <!-- contact/footer -->
+  <footer class=" contact" id="contact">
     <div class="container">
 
-    </div>
-  </section>
+      <h2 class="contact__title title anim fade-in" data-wow-duration="1s">
+        .contact
+        <span class="contact__hover">
+          specify a block cursor
+        </span>
+      </h2>
 
+      <ul class="contact__list social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__text">.telegram: @folickkk</span>
+            <img class="social__image" src="images/telegram.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__text">.vk: imfolick</span>
+            <img class="social__image" src="images/vk.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__text">.instagram: @folickkk</span>
+            <img class="social__image" src="images/instagram.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__text">.linkedin: Alexander Cherkas</span>
+            <img class="social__image" src="images/linkedin.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="social__text">folickthebest@gmail.com</span>
+            <img class="social__image" src="images/email.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact__copy">
+      &copy <span class="contact__copy-text"> made by yourself</span>
+    </div>
+  </footer>
   <!-- script -->
-  <script defer src=" js/libs.min.js"> </script>
+  <script defer src="js/libs.min.js"></script>
   <script defer src="js/script.js">
   </script>
 </body>
