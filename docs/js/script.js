@@ -16,20 +16,20 @@ $(function () {
     menu.classList.toggle("sticky", window.scrollY > 100);
   });
 });
-// gsap
-// gsap.utils.toArray(".menu__list .menu__item .menu__link").forEach(function (a) {
-//   a.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     gsap.to(window, {
-//       duration: 1.5,
-//       scrollTo: e.target.getAttribute("href")
-//     });
-//   });
-// });
+
+gsap.utils.toArray(".menu__list .menu__item .menu__link").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: e.target.getAttribute("href")
+    });
+  });
+});
 
 const t1 = gsap.timeline();
 t1.from(".home__title", {
-    duration: 1.5,
+    duration: 1.1,
     opacity: 0,
     scale: .3,
     y: 50,
@@ -37,7 +37,7 @@ t1.from(".home__title", {
     // markers: true,
   })
   .from(".home__text", {
-    direction: 1.5,
+    direction: 1.1,
     opacity: 0,
     scale: .6,
     y: 50,
@@ -54,22 +54,21 @@ const t2 = gsap.timeline({
 });
 t2.from(".about__title", {
     duration: 1.25,
-    delay: .3,
     x: -250,
     opacity: 0,
     scale: .8,
   })
   .from(".about__box", {
-    duration: 1.25,
+    duration: 1.1,
     x: 150,
     opacity: 0,
-    scale: .8,
+    scale: .9,
   })
   .from(".about__photo", {
-    duration: 1.25,
+    duration: 1.1,
     x: -150,
     opacity: 0,
-    scale: .8,
+    scale: .9,
   }, "-=1.25");
 const t3 = gsap.timeline({
   scrollTrigger: {
@@ -80,14 +79,13 @@ const t3 = gsap.timeline({
   }
 });
 t3.from(".skill__title", {
-    duration: 1.25,
-    delay: .3,
+    duration: 1.1,
     x: -250,
     opacity: 0,
     scale: .8,
   })
   .from('.skill__item', {
-    duration: 1.25,
+    duration: 1.1,
     stagger: 0.10,
     y: 100,
     opacity: 0,
@@ -101,35 +99,33 @@ const t4 = gsap.timeline({
   }
 });
 t4.from(".portfolio__title", {
-    duration: 1.25,
-    delay: .3,
+    duration: 1.1,
     x: -250,
     opacity: 0,
     scale: .8,
   })
   .from('.list .list__item', {
-    duration: 1.5,
-    stagger: 0.5,
+    duration: 1.25,
+    stagger: 0.25,
     y: 150,
     opacity: 0,
   })
 const t5 = gsap.timeline({
   scrollTrigger: {
     trigger: '.contact',
-    start: "top bottom-=350",
-    end: "bottom bottom-=100",
+    start: "top bottom-=150",
+    end: "bottom bottom-=50",
     // markers: true,
   }
 });
 t5.from(".contact__title", {
-    duration: 1.5,
-    delay: .3,
+    duration: 1.1,
     x: -250,
     opacity: 0,
     scale: .8,
   })
   .from('.social__item', {
-    duration: 1.5,
+    duration: .9,
     // stagger: 0.25,
     y: 111,
     opacity: 0,
