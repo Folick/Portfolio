@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-
 $(function () {
   $(".menu__btn").on("click", function (e) {
     $(this).toggleClass("is-active"),
@@ -9,24 +8,7 @@ $(function () {
   $("img, a").on("dragstart", function (event) {
     event.preventDefault();
   });
-  window.addEventListener("scroll", function () {
-    let header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 100);
-    let menu = document.querySelector(".menu__list");
-    menu.classList.toggle("sticky", window.scrollY > 100);
-  });
 });
-
-gsap.utils.toArray(".menu__list .menu__item .menu__link").forEach(function (a) {
-  a.addEventListener("click", function (e) {
-    e.preventDefault();
-    gsap.to(window, {
-      duration: 2,
-      scrollTo: e.target.getAttribute("href")
-    });
-  });
-});
-
 const t1 = gsap.timeline();
 t1.from(".home__title", {
     duration: 1.1,
