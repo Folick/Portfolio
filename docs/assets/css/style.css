@@ -842,8 +842,9 @@ a {
     max-width: 100px;
     width: 100%;
     margin: 0 auto;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    will-change: transform
 }
 
 .contact__link span {
@@ -853,12 +854,13 @@ a {
     left: 0;
     right: 0;
     letter-spacing: 1px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: #000;
     font-size: 0;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    will-change: transform
 }
 
 .contact__link:hover {

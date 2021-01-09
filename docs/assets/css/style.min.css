@@ -332,6 +332,27 @@ a {
   text-decoration: none; }
 
 /* blocks */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  background: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.loaded {
+  animation: vanish 0.5s forwards; }
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
 .loading__screen {
   position: relative;
   padding-left: 0;
@@ -450,7 +471,8 @@ a {
     .menu__link.is-active {
       transform: scale(1.05);
       background-color: #fff;
-      color: #000; }
+      color: #000;
+      cursor: default; }
     .menu__link:focus, .menu__link:hover {
       transform: scale(1.1);
       background-color: #fff;
