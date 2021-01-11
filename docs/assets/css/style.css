@@ -194,6 +194,45 @@ a {
     text-decoration: none
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: #202020;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.loaded {
+    -webkit-animation: vanish 0.5s forwards;
+    animation: vanish 0.5s forwards
+}
+
+@-webkit-keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
 .loading__screen {
     position: relative;
     padding-left: 0;
@@ -373,7 +412,8 @@ a {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     background-color: #fff;
-    color: #000
+    color: #000;
+    cursor: default
 }
 
 .menu__link:focus,.menu__link:hover {
