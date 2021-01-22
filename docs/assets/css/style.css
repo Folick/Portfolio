@@ -694,7 +694,8 @@ a {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    will-change: filter, transfom, opacity
 }
 
 .work__list {
@@ -806,8 +807,9 @@ a {
     transform: scale(2);
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    -webkit-filter: blur(2px);
-    filter: blur(2px)
+    will-change: filter;
+    -webkit-filter: blur(1px);
+    filter: blur(1px)
 }
 
 .work__image::after {
