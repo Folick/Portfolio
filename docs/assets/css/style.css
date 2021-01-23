@@ -744,48 +744,41 @@ a {
 .work__link span {
     position: absolute;
     z-index: 3;
-    display: inline-block;
+    display: block;
     padding: 1rem;
-    width: 100%;
     left: 50%;
+    top: 50%;
     font-size: 30px;
     letter-spacing: 5px;
     color: #fff;
     text-shadow: 0 0 5px #fff;
     text-align: center;
     background-color: transparent;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     will-change: transform;
-    -webkit-transition: background-color 0.15s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: background-color 0.15s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, background-color 0.15s ease-in-out;
-    transition: transform 0.5s ease-in-out, background-color 0.15s ease-in-out, -webkit-transform 0.5s ease-in-out
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out
 }
 
 .work__link:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: 1
+    transform: scale(1.1)
 }
 
 .work__link:hover span {
-    -webkit-transform: scale(0.8) translate(-30px, 80px) rotate(90deg);
-    transform: scale(0.8) translate(-30px, 80px) rotate(90deg);
-    -webkit-transition: 0.5s ease-in-out, background-color 0.15s ease-in-out 0.6s;
-    transition: 0.5s ease-in-out, background-color 0.15s ease-in-out 0.6s;
-    background-color: rgba(0,0,0,0.8)
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1)
 }
 
 .work__link:hover .work__image {
     -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    -webkit-filter: blur(0);
-    filter: blur(0)
+    transform: scale(1.3)
 }
 
 .work__link:hover .work__image::after {
-    background-color: rgba(0,0,0,0.3)
+    background-color: rgba(0,0,0,0.8)
 }
 
 @media screen and (max-width: 500px) {
@@ -807,9 +800,7 @@ a {
     transform: scale(2);
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    will-change: filter;
-    -webkit-filter: blur(1px);
-    filter: blur(1px)
+    will-change: filter
 }
 
 .work__image::after {
@@ -819,7 +810,7 @@ a {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.3);
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out
 }
