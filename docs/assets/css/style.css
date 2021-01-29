@@ -742,23 +742,25 @@ a {
 }
 
 .work__link span {
-    position: absolute;
-    z-index: 3;
     display: block;
     padding: 1rem;
-    left: 50%;
+    position: absolute;
     top: 50%;
+    z-index: 3;
+    width: 100%;
     font-size: 30px;
     letter-spacing: 5px;
     color: #fff;
     text-shadow: 0 0 5px #fff;
     text-align: center;
-    background-color: transparent;
-    -webkit-transform: translate(-50%, -50%) scale(0);
-    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
     will-change: transform;
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out
+    -webkit-transform: translate(-100%, -50%) scaley(0);
+    transform: translate(-100%, -50%) scaley(0);
+    -webkit-transition: opacity 0.5s linear, -webkit-transform 0.3s linear;
+    transition: opacity 0.5s linear, -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear, opacity 0.5s linear;
+    transition: transform 0.3s linear, opacity 0.5s linear, -webkit-transform 0.3s linear
 }
 
 .work__link:hover {
@@ -768,13 +770,13 @@ a {
 
 .work__link:hover span {
     opacity: 1;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1)
+    -webkit-transform: translate(0, -50%) scaley(1.2);
+    transform: translate(0, -50%) scaley(1.2)
 }
 
 .work__link:hover .work__image {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3)
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6)
 }
 
 .work__link:hover .work__image::after {
@@ -789,18 +791,25 @@ a {
 }
 
 .work__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: no-repeat center / contain;
     border-radius: 3rem 0.5rem;
     will-change: transform;
     -webkit-transform: scale(2);
     transform: scale(2);
     -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    will-change: filter
+    transition: all 0.4s ease-in-out
 }
 
 .work__image::after {
@@ -813,6 +822,11 @@ a {
     background-color: rgba(0,0,0,0.3);
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out
+}
+
+.work__image img {
+    display: block;
+    width: 100%
 }
 
 @media screen and (max-width: 500px) {
